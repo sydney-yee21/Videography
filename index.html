@@ -24,8 +24,8 @@ Description: Demonstrates how to create a navigation bar along with a dropdown m
 
 Date retrieved: Wednesday, November 12, 2025
 -->
-    
-<!-- 
+
+    <!-- 
 Code copied from: https://www.w3schools.com/html/html_youtube.asp
 
 Author: W3Schools 
@@ -37,10 +37,18 @@ Description: Demonstrates how to embed a YouTube video into HTML
 Date retrieved: Thursday, November 13, 2025
 -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
     <style>
       html {
         font-size: 16px;
-        /* change ems */
       }
 
       body {
@@ -57,10 +65,12 @@ Date retrieved: Thursday, November 13, 2025
         height: 80px;
         display: flex;
         align-items: center;
+        font-family: "Open-Sans", sans-serif;
       }
 
       li {
         margin: auto;
+        font-family: "Kedebideri", sans-serif;
       }
 
       li.logo {
@@ -170,123 +180,128 @@ Date retrieved: Thursday, November 13, 2025
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         opacity: 0.9;
       }
-      
-      h1, h2 {
+
+      h1,
+      h2 {
         text-align: center;
       }
-      
+
+      p,
+      h2 {
+        font-family: "Kedebideri", sans-serif;
+      }
+
       iframe {
         display: block;
         margin: auto;
-        
       }
-      
+
       .width {
         width: 1200px;
-        margin: auto; 
+        margin: auto;
       }
-      
     </style>
   </head>
   <body>
     <div class="width">
       <ul>
-      <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
-      <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
-      <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn"><b>Projects</b></a>
-        <div class="dropdown-content">
-          <a href="https://sydney-yee21.github.io/Videography/"><b>Videography</b></a>
-          <a href="https://sydney-yee21.github.io/Service-Design/">Service Design</a>
-          <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+        <li class="logo"><a href="https://sydney-yee21.github.io/Home/"><img src="Logo.png" alt="Sydney Yee" style="width:120px; height:50px;"></a></li>
+        <li><a href="https://sydney-yee21.github.io/Home/">Home</a></li>
+        <li><a href="https://sydney-yee21.github.io/About/">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn"><b>Projects</b></a>
+          <div class="dropdown-content">
+            <a href="https://sydney-yee21.github.io/Videography/"><b>Videography</b></a>
+            <a href="https://sydney-yee21.github.io/Service-Design/">Service Design</a>
+            <a href="https://sydney-yee21.github.io/Website-Redesign/">Website Redesign</a>
+          </div>
+        </li>
+        <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
+        <li><a href="https://sydney-yee21.github.io/Contact/">Contact</a></li>
+      </ul>
+
+      <div class="content">
+        <div class="half-left">
+
+          <h1>
+            Videography
+          </h1>
+          <p>
+            Created a 1-minute silent film on Allen Station (Waterloo)
+          </p>
+          <p>
+            <u>Equipment</u>
+
+            <li> Cannon 90D</li>
+            <li> Manfrotto BeFree Tripod</li>
+            <li> Iphone 16</li>
+            <li> Adobe Premiere Pro</li>
+          </p>
+
         </div>
-      </li>
-      <li><a href="https://sydney-yee21.github.io/Resume/">Resume</a></li>
-      <li><a href="https://sydney-yee21.github.io/Contact/">Contact</a></li>
-    </ul>
 
-    <div class="content">
-      <div class="half-left">
-
-        <h2>
-          Videography
-        </h2>
-        <p>
-          Created a 1-minute silent film on Allen Station (Waterloo)
-        </p>
-        <p>
-          <u>Equipment</u>
-        </p>
-        <li> Cannon 90D</li>
-        <li> Manfrotto BeFree Tripod</li>
-        <li> Iphone 16</li>
-        <li> Adobe Premiere Pro</li>
+        <div class="half-right">
+          <img src="allen.png" alt="Photo of me">
+        </div>
 
       </div>
 
-      <div class="half-right">
-        <img src="allen.png" alt="Photo of me">
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
       </div>
 
-    </div>
+      <div class="content">
+        <div class="half-left">
 
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
+          <h1>
+            Treatment &amp Production Plan
+          </h1>
+          <p>
+            Created a treatment and production plan outlining the location, schedule, characters, equipment, and shot types to visually document Allen Station’s daily activity and atmosphere.
+          </p>
 
-    <div class="content">
-      <div class="half-left">
+        </div>
 
-        <h2>
-          Treatment and Production Plan
-        </h2>
-        <p>
-          Created a treatment and production plan outlining the location, schedule, characters, equipment, and shot types to visually document Allen Station’s daily activity and atmosphere.
-        </p>
+        <div class="half-right">
+          <a href="https://drive.google.com/file/d/1Y1jhu7j6IkBVzY_SAHky9nPUfLMAOrw0/view?usp=sharing" target="_blank">
+            <img src="plan.png" alt="Treatment and Production Plan" class="pdf-link">
+          </a>
+        </div>
 
       </div>
 
-      <div class="half-right">
-        <a href="https://drive.google.com/file/d/1Y1jhu7j6IkBVzY_SAHky9nPUfLMAOrw0/view?usp=sharing" target="_blank">
-          <img src="plan.png" alt="Treatment and Production Plan" class="pdf-link">
-        </a>
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
       </div>
 
+      <h1 style="font-size: 3em;">
+        Roughcut
+      </h1>
+
+      <h2>
+        Used the treatment and production plan as a guide to effectively convey allen station’s daily activity
+      </h2>
+
+      <iframe width="745" height="420" src="https://www.youtube.com/embed/Tq9Ovc7zuMM?si=eg-MyRwvXDq6HRkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
+
+      <h1 style="font-size: 3em;">
+        Final Cut
+      </h1>
+
+      <h2>
+        Corrected overexposed shots and emphasizied the passage of time
+      </h2>
+
+      <iframe width="745" height="420" src="https://www.youtube.com/embed/a8Cdw6EOe9I?si=3yiX-g89IZAbukPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <div class="fullwidth">
+        <img src="line.png" alt="diagonal black line" style="width:100%;">
+      </div>
     </div>
 
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-    
-    <h1>
-      Roughcut
-    </h1>
-    
-    <h2>
-      Used the treatment and production plan as a guide to effectively convey allen station’s daily activity
-    </h2>
- 
-<iframe width="745" height="420" src="https://www.youtube.com/embed/Tq9Ovc7zuMM?si=eg-MyRwvXDq6HRkO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-    
-    <h1>
-      Final Cut
-    </h1>
-    
-    <h2>
-   Corrected overexposed shots and emphasizied the passage of time 
-    </h2>
- 
-<iframe width="745" height="420" src="https://www.youtube.com/embed/a8Cdw6EOe9I?si=3yiX-g89IZAbukPa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-    <div class="fullwidth">
-      <img src="line.png" alt="diagonal black line" style="width:100%;">
-    </div>
-    </div>
-    
   </body>
 </html>
